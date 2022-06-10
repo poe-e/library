@@ -68,7 +68,7 @@ function App() {
                 <p>{item.author}</p>
                 <p>{item.pages}</p>
                 <div className='buttons'>
-                  <button className={item.bookRead ? 'read' : 'notRead'} id={index} onClick={(e)=>{changeReadStatus(e)}}>{item.bookRead ? 'Read' : 'Not Read'}</button>
+                  <button className={item.bookRead ? 'read' : 'notRead'} id={index} onClick={(e)=>{changeReadStatus(e)}}>{item.bookRead ? 'Read' : 'Unread'}</button>
                   <button className='remove' onClick={(e)=>removeBookFromLibrary(e)}>Remove</button>
                 </div>
               </div>
