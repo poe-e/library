@@ -33,9 +33,7 @@ const Popup = (props) =>{
                         <label htmlFor='bookRead'>Have you read it?</label>
                         <input type='checkbox' id='bookRead'/>
                     </div>
-                    <button className='submitBook'  type='Submit' 
-                    >Submit
-                    </button>
+                    <button className='submitBook'  type='Submit'>Submit</button>
                 </form>
             </div>
         </div>
