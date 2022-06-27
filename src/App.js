@@ -3,31 +3,7 @@ import React, { useState } from 'react';
 import Popup from './components/Popup';
 
 function App() {
-  // const [myLibrary, setLibrary] = useState([
-  //   {
-  //   name: 'Test1',
-  //   author:'Author',
-  //   pages: '123',
-  //   bookRead:true
-  // },
-  // {
-  //   name: 'Test2',
-  //   author:'Author',
-  //   pages: '123',
-  //   bookRead:false
-  // },
-  // {
-  //   name: 'Test3',
-  //   author:'Author',
-  //   pages: '123',
-  //   bookRead:true
-  // },
-  // {
-  //   name: 'Test3',
-  //   author:'Author',
-  //   pages: '123',
-  //   bookRead:false
-  // }]);
+
   const [myLibrary, setLibrary] = useState(
     JSON.parse(localStorage.getItem('library')) || []
   );
