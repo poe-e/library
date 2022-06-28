@@ -1,12 +1,11 @@
 import './popup.css'
 
 const Popup = (props) =>{
+
     function onSubmit(e){
-        e.preventDefault();
-        // console.log(e.target[0].value);
-        // console.log(e.target[1].value);
-        // console.log(e.target[3].checked);
-        // console.log(e.target[3].value === 'on' ? true : false);
+        //e.preventDefault();
+
+        document.getElementById('bookTitle').setCustomValidity("Test");
         let book = {
             name: e.target[0].value,
             author: e.target[1].value,
@@ -27,8 +26,8 @@ const Popup = (props) =>{
                 <form onSubmit={(e)=>onSubmit(e)}>
                     <h3>Add a Book</h3>
                     <input className='formElements' type='text' id='bookTitle' placeholder='Title' required/>
-                    <input className='formElements' type='text' id='bookAuthor' placeholder='Author' required/>
-                    <input className='formElements' type='number' id='bookPages' placeholder='Pages' required/>
+                    <input className='formElements' type='text' id='bookAuthor' placeholder='Author' />
+                    <input className='formElements' type='number' id='bookPages' placeholder='Pages' />
                     <div className='readBookDiv'>
                         <label htmlFor='bookRead'>Have you read it?</label>
                         <input type='checkbox' id='bookRead'/>
